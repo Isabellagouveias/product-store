@@ -1,8 +1,14 @@
 @use '@angular/material' as mat;
 
 :host {
-  @include mat.toolbar-overrides((
-    container-background-color: var(--mat-sys-inverse-surface),
-    container-text-color: var(--mat-sys-inverse-on-surface),
-  ));
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: var(--mat-sys-inverse-surface),
+      container-text-color: var(--mat-sys-inverse-on-surface),
+    )
+  );
+}
+
+.title {
+  text-align: center;
 }
