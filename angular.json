@@ -3,6 +3,9 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
+    "cache": {
+      "path": "C:/angular-cache/product-store"
+    },
     "schematicCollections": ["angular-eslint"]
   },
   "newProjectRoot": "projects",
@@ -90,7 +93,8 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "proxyConfig": "proxy.config.json"
+            "proxyConfig": "proxy.config.json",
+            "prebundle": false
           }
         },
         "lint": {
