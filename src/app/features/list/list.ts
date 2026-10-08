@@ -2,11 +2,13 @@ import { Component, inject, OnInit, signal } from '@angular/core';
 import { Product } from '../../shared/interfaces/product.interface';
 import { Products } from '../../shared/services/products';
 import { Card } from './components/card/card';
+import { RouterLink } from '@angular/router';
+import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [Card],
+  imports: [Card, RouterLink, MatButton],
   templateUrl: './list.html',
   styleUrl: './list.scss',
 })
